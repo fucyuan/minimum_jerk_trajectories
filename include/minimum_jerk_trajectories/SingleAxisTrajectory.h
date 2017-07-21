@@ -19,7 +19,7 @@
 
 #pragma once
 
-namespace RapidQuadrocopterTrajectoryGenerator
+namespace minimum_jerk_trajectories
 {
 
 //! An axis along one spatial direction

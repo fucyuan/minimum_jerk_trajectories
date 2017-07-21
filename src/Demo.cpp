@@ -21,8 +21,8 @@
 #include <iostream>
 using namespace std;
 
-#include "RapidTrajectoryGenerator.h"
-using namespace RapidQuadrocopterTrajectoryGenerator;
+#include "minimum_jerk_trajectories/RapidTrajectoryGenerator.h"
+using namespace minimum_jerk_trajectories;
 
 //Two simple helper function to make testing easier
 const char* GetInputFeasibilityResultName(RapidTrajectoryGenerator::InputFeasibilityResult fr)
@@ -101,4 +101,3 @@ int main(void)
   cout << "Position feasible? " << GetStateFeasibilityResultName(traj.CheckPositionFeasibility(floorPos, floorNormal)) << "\n";
   return 0;
 }
-

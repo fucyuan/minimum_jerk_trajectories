@@ -18,10 +18,10 @@
  */
 
 #pragma once
-#include "SingleAxisTrajectory.h"
-#include "Vec3.h"
+#include "minimum_jerk_trajectories/SingleAxisTrajectory.h"
+#include "minimum_jerk_trajectories/Vec3.h"
 
-namespace RapidQuadrocopterTrajectoryGenerator
+namespace minimum_jerk_trajectories
 {
 
 //! A quadrocopter state interception trajectory.

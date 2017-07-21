@@ -17,13 +17,13 @@
  * along with the code.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "RapidTrajectoryGenerator.h"
-#include "RootFinder/quartic.hpp"
+#include "minimum_jerk_trajectories/RapidTrajectoryGenerator.h"
+#include "minimum_jerk_trajectories/RootFinder/quartic.hpp"
 
 #include <algorithm>
 #include <limits>
 
-using namespace RapidQuadrocopterTrajectoryGenerator;
+using namespace minimum_jerk_trajectories;
 
 RapidTrajectoryGenerator::RapidTrajectoryGenerator(const Vec3 x0, const Vec3 v0, const Vec3 a0, const Vec3 gravity)
 {
@@ -214,5 +214,3 @@ Vec3 RapidTrajectoryGenerator::GetOmega(double t, double timeStep) const
 	if (crossProd.GetNorm2()) return  (acos(n0.Dot(n1))/timeStep)*crossProd.GetUnitVector();
 	else return Vec3(0, 0, 0);
 }
-
-

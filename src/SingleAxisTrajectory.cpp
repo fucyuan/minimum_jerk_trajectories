@@ -17,13 +17,13 @@
  * along with the code.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "SingleAxisTrajectory.h"
+#include "minimum_jerk_trajectories/SingleAxisTrajectory.h"
 
 #include <math.h>
 #include <algorithm>//For min/max
 #include <limits>//for max double
 
-using namespace RapidQuadrocopterTrajectoryGenerator;
+using namespace minimum_jerk_trajectories;
 
 SingleAxisTrajectory::SingleAxisTrajectory(void)
   :_a(0),_b(0),_g(0),_cost(std::numeric_limits<double>::max())
