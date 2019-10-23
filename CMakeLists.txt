@@ -3,7 +3,6 @@ project(minimum_jerk_trajectories)
 
 find_package(catkin_simple REQUIRED)
 catkin_simple()
-quad_cmake_setup(ALL_DEPS_REQUIRED)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
